@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    --background: #0a0a0a;
+    --foreground: #fafafa;
+
+    --card:#101013;
+    --card-foreground: #fafaf9;
+
+    --popover: #0a0a0a;
+    --popover-foreground: #fafafa;
+
+    --primary: #350ea9;
+    --primary-foreground: #fafafa;
+
+    --secondary: #262626;
+    --secondary-foreground: #fafafa;
+
+    --muted: #262626;
+    --muted-foreground: #a3a3a3;
+
+    --accent: #262626;
+    --accent-foreground: #fafafa;
+
+    --destructive: #7f1d1d;
+    --destructive-foreground: #fafafa;
+
+    --border: #262626;
+    --input: #262626;
+    --ring: #d4d4d4;
+  }
+}  
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased; /* Suaviza as fontes no Chrome */
+    -moz-osx-font-smoothing: grayscale; /* Suaviza as fontes no Firefox */
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} 
+  
+.container { /* Estilo para o contêiner */
+  @apply mx-auto w-full max-w-[1200px] px-6; 
+}
